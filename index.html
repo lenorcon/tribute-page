@@ -1,99 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #1f6fbb;
-            font-family: Arial, sans-serif;
-        }
-        .profile-card{
-            background-color: rgb(37, 138, 125);
-            color: #fff;
-            width: 500px;
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .profile-image img{
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            
-        }
-
-        .profile-image{
-            text-align: center;
-           
-        }
-        
-
-        .profile-image p{
-            margin: 0;
-            font-size: 14px;
-            color: #939090;
-            line-height: 0;
-           
-        }
-        .profile-info{
-           flex: 1;
-           padding: 10px;
-           margin-left: 10px;
-            
-        }
-
-        .profile-info h1{
-            margin: 10px 0;
-        }
-
-        .profile-info p{
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-        .profile-info button{
-            background-color: #e94e77;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-
-        }
-        .profile-info button:hover{
-            background-color: #d14064;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photographer's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="profile-card">
-        <div class="profile-image">
-            <img src="image/cordovabg.jpg" alt="cordovabg">
-            <p>@lenorcon</p>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">
+                <a href="#">HomeMaster</a>
+            </div>
+            <ul class="hidden md:flex space-x-8 text-lg">
+                <li><a href="#" class="hover:text-gray-700">Awards</a></li>
+                <li><a href="#" class="hover:text-gray-700">Shots</a></li>
+                <li><a href="#" class="hover:text-gray-700">Blog</a></li>
+                <li><a href="#" class="hover:text-gray-700">Who we are</a></li>
+                <li><a href="#" class="hover:text-gray-700">Find us</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <a href="tel:+919841970059" class="text-lg font-semibold">+91 9841 97 0059</a>
+            </div>
+            <button class="md:hidden text-2xl">☰</button>
         </div>
-        <div class="profile-info">
-            <h1>lenorcon</h1>
-            <p>asgdfugsudfguyasgdyufgsyugdfyusgyufgsyugfyg
-                sfsfgyusdgfysdgfygsydfgysgfysdgfysgfygsyfgysdf
-                fsgdfgsyfgyusgfysgfysgfygsyfgsydfgysdgfysgdyf
-                sfsgdfgsydfgysdgfysdgfysdgfysdgyfgsydgfysd
-            </p>
-            <button>READ MORE</button>
-        </div>
-       
-       
-    </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <header class="container mx-auto mt-10 text-center ">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">We are creative <span class="text-black">Photographers</span></h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 ">
+            <div class="md:col-span-2 grid grid-cols-2 mr-auto gap-2 absolute">
+                <div class="container">
+                    <div class="">
+                        <img src="image/cordovabg.jpg" class="relative" alt="">
+                    </div>
+                </div>
+                <img src="image/cordovabg.jpg" alt="Image 1" class=" w-full h-48 object-cover rounded-lg">
+                <img src="image/home.png" alt="Image 2" class="w-full h-48 object-cover rounded-lg">
+                <img src="image/cordovabg.jpg" alt="Image 3" class="w-full h-48 object-cover rounded-lg">
+                <img src="image/home.png" alt="Image 4" class="w-full h-48 object-cover rounded-lg">
+           
+           
+                <img src="image/home.png" alt="Image 5" class="w-full h-48 object-cover rounded-lg mb-2">
+                <img src="image/cordovabg.jpg" alt="Image 6" class="w-full h-48 object-cover rounded-lg mb-2">
+                <img src="image/cordovabg.jpg" alt="Image 7" class="w-full h-48 object-cover rounded-lg">
+            </div>
+    </header>
 </body>
 </html>
